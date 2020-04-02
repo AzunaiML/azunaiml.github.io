@@ -295,56 +295,40 @@ footer #tzine-actions iframe{
     background: #ff5722;
 }
 
-/* Shuffle */
 
-.ul-shuffle {
-    list-style: none;
-    position: relative;
-    /*   height: 120px; */
+.chip.chip-md {
+    height: 42px;
+    line-height: 42px;
+    border-radius: 21px;
+}
+.chip.chip-md img {
+    height: 42px;
+    width: 42px;
+}
+.chip.chip-md .close {
+    height: 42px;
+    line-height: 42px;
+    border-radius: 21px;
+}
+.chip.font-chips {
+    font-size: 20px;
 }
 
-.li-shuffle {
-    width: 100px;
-    line-height: 2em;
-    text-align: center;
-    transition: all 0.9s ease-out;
-    position: absolute;
-
-    left: 0;
+.chip.font-chip-center{
+    font-size: 40px;
 }
 
-.content1 {
-    background-color: #eee;
-    /*   top: 0; */
+.chip.chip-lg {
+    height: 70px;
+    line-height: 70px;
+    border-radius: 35px;
 }
-
-.content2 {
-    background-color: #ddd;
-    /*   top: 30px; */
+.chip.chip-lg img {
+    height: 70px;
+    width: 70px;
 }
-
-.content3 {
-    background-color: #ccc;
-    /*   top: 60px; */
-}
-
-.content4 {
-    background-color: #bbb;
-    /*   top: 90px; */
-}
-
-[data-pos="1"] {
-    top: 0;
-}
-
-[data-pos="2"] {
-    top: 30px;
-}
-
-[data-pos="3"] {
-    top: 60px;
-}
-
-[data-pos="4"] {
-    top: 90px;
+.chip.chip-lg .close {
+    height: 70px;
+    line-height: 70px;
+    border-radius: 35px;
 }
