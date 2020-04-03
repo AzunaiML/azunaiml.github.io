@@ -295,6 +295,14 @@ footer #tzine-actions iframe{
     background: #ff5722;
 }
 
+.bg-green {
+    background: #52B266;
+}
+
+.bg-cyan {
+    background: #00838F;
+}
+
 /* Chips */
 .chip.chip-md {
     height: 42px;

@@ -40,25 +40,39 @@ function add_card(insert_element_id) {
     team_members_icon.setAttribute('class', 'fas fa-users prefix grey-text');
     let team_members_input = document.createElement('input');
     team_members_input.setAttribute('type', 'text');
-    team_members_input.setAttribute('id', 'form104');
+    team_members_input.setAttribute('id', 'members_card'+card_number);
     team_members_input.setAttribute('class', 'form-control');
-    team_members_input.setAttribute('placeholder', 'Team members');
+    team_members_input.setAttribute('onfocus', 'onEnter(this)');
+    team_members_input.setAttribute('onblur', 'onExit(this)');
+    let team_members_label = document.createElement('label');
+    team_members_label.setAttribute('for', 'members_card'+card_number);
+    team_members_label.setAttribute('class','');
+    team_members_label.textContent = "Team members";
+
 
     let problem_div = document.createElement('div');
     problem_div.setAttribute('class', 'md-form');
     let problem_icon = document.createElement('i');
     problem_icon.setAttribute('class', 'fas fa-pencil-alt prefix grey-text');
     let problem_textarea = document.createElement('textarea');
-    problem_textarea.setAttribute('id', 'form107');
+    problem_textarea.setAttribute('id', 'problem_card'+card_number);
     problem_textarea.setAttribute('class', 'md-textarea form-control');
     problem_textarea.setAttribute('rows', '3');
-    problem_textarea.setAttribute('placeholder', 'Your problem');
+    problem_textarea.setAttribute('onfocus', 'onEnter(this)');
+    problem_textarea.setAttribute('onblur', 'onExit(this)');
+    let problem_label = document.createElement('label');
+    problem_label.setAttribute('for', 'problem_card'+card_number);
+    problem_label.setAttribute('class','');
+    problem_label.textContent = "Your problem";
+
 
     team_members_div.appendChild(team_members_icon);
     team_members_div.appendChild(team_members_input);
+    team_members_div.appendChild(team_members_label);
 
     problem_div.appendChild(problem_icon);
     problem_div.appendChild(problem_textarea);
+    problem_div.appendChild(problem_label);
 
     card_body.appendChild(team_members_div);
     card_body.appendChild(problem_div);
